@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-
+import {Link} from 'react-router-dom';
 const Register = ({setAuth}) => {
   const [inputs, setInputs] = useState({
     email: "",
@@ -64,6 +64,7 @@ const Register = ({setAuth}) => {
 
         <button className="btn btn-success btn-block">Submit</button>
       </form>
+      <Link to={'/login'}>Login</Link>
     </Fragment>
   );
 };
